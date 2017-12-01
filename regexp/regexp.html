@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo_1"></p>
+
+<script>
+function myFunction() {
+    var str = "Yanamandra Siddharth - 961 yanamandra.siddharth@gmail.com 8125610787";
+    var name = str.split("-")[0];
+    var rest = str.split("-")[1];
+    var commuterId = rest.split(" ")[1];
+    var email = rest.split(" ")[2]
+    var phone = rest.split(" ")[3];
+
+    	console.log("name: ",name);
+    	console.log("commuterId: ",commuterId);
+    	console.log("Email: ",email);
+    	console.log("Phone: ",phone);
+}
+</script>
+
+</body>
+</html>
