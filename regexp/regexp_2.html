@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo_1"></p>
+
+<script>
+function myFunction() {
+    var str = "Software isoftwares a software and Software.";
+    console.log(str);
+    var reg = /Software/i;
+    var reg_1 = /Software/gi;
+    console.log("answer: " +reg.exec(str));
+    console.log("answer: " +reg.test(str));
+    console.log("answer: " +reg_1.exec(str));
+    console.log(str.match(reg_1));
+
+
+    var str_2 = "Is th\nis it?";
+		var patt1 = /^is/m;
+		var patt2 = /is/g;
+		console.log(str_2);
+
+		console.log(str_2.match(patt1));
+		console.log(str_2.match(patt2));
+}
+</script>
+
+</body>
+</html>
